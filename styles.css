@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/*Side-bar on right*/
+
+#right-side .diamond{
+    height: 10%;
+    background-color: blueviolet;
+}
+
+nav {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+}
+
