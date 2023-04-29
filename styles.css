@@ -21,6 +21,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     padding-top: 0;
+    transition: width 2.5s;
 }
 
 header{
@@ -51,6 +52,7 @@ main{
     top: 0;
     right: 0;
     height: 100%;
+    transition: width 2.5s;
 }
 
 nav {

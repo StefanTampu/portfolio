@@ -14,5 +14,4 @@ navButton.addEventListener("click", () => {
         rightSide.style.width = "0%";
         leftSide.style.width = "100%";
     }
-    console.log("hello");
 })
