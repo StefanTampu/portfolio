@@ -11,18 +11,15 @@ html{
 body{
     width: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 /*    background-color: hsl(12, 100%, 50%);*/
 }
 
 
 #left-side{
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex: 75%;
     padding-top: 0;
 }
 
@@ -53,7 +50,11 @@ main{
 /*Side-bar on right*/
 
 #right-side{
-    flex: 20%;
+    width: 25%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
 }
 
 nav {
