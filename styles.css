@@ -33,7 +33,7 @@ a{
 header{
     width: 100%;
     height: 6rem;
-    padding: 2rem;
+    padding: 3rem;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -46,9 +46,28 @@ header h2{
 }
 
 .diamond {
-    height: 5rem;
-    width: 5rem;
-    background-color: purple;
+    height: 4rem;
+    width: 4rem;
+    color: white;
+    font-size: 5rem;
+    background-color: hsl(300, 100%, 25%);
+    transition: background-color 0.75s, font-size 0.75s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    border: 0.5rem double white;
+}
+
+.diamond:hover{
+    background-color: hsl(300, 100%, 10%);
+    font-size: 4rem;
+}
+
+.diamond p{
+    font-weight: 600;
+    transform: rotate(-45deg);
+    cursor: pointer;
 }
 
 main{
