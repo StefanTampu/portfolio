@@ -14,24 +14,35 @@ body{
 /*    background-color: hsl(12, 100%, 50%);*/
 }
 
+a{
+    text-decoration: none;
+    color: none;
+}
+
 
 #left-side{
+    min-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-top: 0;
-    transition: width 2.5s;
+    transition: width 1s;
 }
 
 header{
     width: 100%;
-    height: 8rem;
+    height: 6rem;
     padding: 2rem;
     display: flex;
     justify-content: space-between; 
     align-items: center;
     background-color: blanchedalmond;
+}
+
+header h2{
+    font-size: 2rem;
+    color: mediumvioletred;
 }
 
 .diamond {
@@ -52,7 +63,7 @@ main{
     top: 0;
     right: 0;
     height: 100%;
-    transition: width 2.5s;
+    transition: width 1s;
 }
 
 nav {
@@ -62,8 +73,23 @@ nav {
     justify-content: center;
     gap: 5rem;
     background-color:antiquewhite;
-    padding: 2rem;
 }
+
+nav a{
+    padding: 0.5rem;
+    width: 70%;
+    font-size: 2rem;
+    color: white;
+    background-color: hsl(340, 57%, 64%);
+    border: 0.5rem double white;
+    transition: background-color 0.5s;
+}
+
+nav a:hover{
+    background-color: hsl(340, 57%, 50%);
+}
+
+/*footer*/
 
 footer {
     padding: 2rem;
