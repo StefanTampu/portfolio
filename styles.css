@@ -45,13 +45,17 @@ a{
 }
 
 header{
-    width: 100%;
     height: 6rem;
     padding: 3rem;
     display: flex;
     justify-content: space-between; 
     align-items: center;
     background-color: var(--black);
+    transition: box-shadow 2s;
+/*    box-shadow: 0 2px 8px 4px var(--lead-white);*/
+}
+
+header:hover{
     box-shadow: 0 2px 8px 4px var(--lead-white);
 }
 
@@ -133,7 +137,19 @@ nav a:hover{
 footer {
     padding: 2rem;
     color: var(--lead-white);
-    text-decoration: underline;
+    font-variant: small-caps;
+    opacity: 0;
+    animation: footerAppear 3s linear 5s;
+    animation-fill-mode: forwards;
+}   
+
+footer h2{
+    display: inline;
+    transition: 500ms;
+}
+
+footer h2:hover{
+    text-shadow: 0 -4px 8px white;
 }
 
 #connect-links{
@@ -144,6 +160,28 @@ footer {
 
 #connect-links img {
     height: 32px;
+    transition: 500ms;
+}
+
+#github-icon:hover{
+    filter:drop-shadow(-16px 4px 4px white); 
+}
+
+#email-icon:hover {
+    filter:drop-shadow(0 4px 4px white);  
+}
+
+#linkedin-icon:hover{
+    filter:drop-shadow(16px 4px 4px white); 
+}
+
+@keyframes footerAppear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100;
+    }
 }
 
 /*Index page*/
@@ -155,11 +193,32 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: var(--lead-white);
     color: var(--carmine);
-    border-image: linear-gradient(150deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
-    border-width: 6px;
-    border-style: solid;
+    animation: borderAppear 3s linear 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes borderAppear {
+    from{
+        border-image: linear-gradient(0deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
+        border-width: 8px;
+        border-style: solid;
+        background-color: var(--black);
+        opacity: 0
+    }
+    33%{
+        border-image: linear-gradient(50deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
+        opacity: 1; 
+    }
+    66%{
+        border-image: linear-gradient(100deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
+    }
+    to{
+        border-image: linear-gradient(150deg, var(--carmine), var(--lead-white), var(--vermillion)) 1;
+        border-width: 8px;
+        border-style: solid;
+        background-color: var(--lead-white);
+    }
 }
 
 
