@@ -142,6 +142,10 @@ footer {
     margin-top: 1rem;
 }
 
+#connect-links img {
+    height: 32px;
+}
+
 /*Index page*/
 
 #main-message {
