@@ -24,6 +24,7 @@ html{
 body{
     width: 100%;
     min-height: 100vh;
+    overflow: hidden;
 /*    background-color: hsl(12, 100%, 50%);*/
 }
 
@@ -65,28 +66,52 @@ header h2{
 }
 
 .diamond {
-    height: 4rem;
-    width: 4rem;
+    height: 48px;
+    width: 48px;
     color: var(--lead-white);
-    font-size: 5rem;
-    background-color: var(--madder);
-    transition: 0.75s;
+    font-size: 60px;
+    background-color: var(--carmine);
+    transition: 750ms;
     display: flex;
     justify-content: center;
     align-items: center;
     transform: rotate(45deg);
-    border: 0.5rem double var(--lead-white);
+    border: 6px double var(--lead-white);
+}
+
+.index-diamond {
+    margin-right: -150px;
+    animation: diamondAnimate 2s linear 5s;
+    animation-fill-mode: forwards;
 }
 
 .diamond:hover{
-    background-color: var(--carmine);
-    font-size: 4rem;
+    background-color: var(--vermillion);
+    box-shadow: 0 0 4px 4px var(--vermillion), inset 0 0 4px 4px var(--lead-white);
+    font-size: 48px;
 }
 
 .diamond p{
     font-weight: 600;
     transform: rotate(-45deg);
     cursor: pointer;
+}
+
+@keyframes diamondAnimate {
+    from {
+        margin-right: -150px;
+    }
+    50% {
+        margin-right: 0px;
+    }
+    75% {
+        background-color: var(--vermillion);
+        box-shadow: 0 0 4px 4px var(--vermillion), inset 0 0 4px 4px var(--lead-white);
+    }
+    to {
+        background-color: var(--carmine);
+        margin-right: 0px;
+    }
 }
 
 main{
