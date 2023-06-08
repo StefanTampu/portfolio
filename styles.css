@@ -10,22 +10,24 @@ html{
 
 :root{
     --black: #100C08;
-    --charcoal: #28231D;
+    --charcoal: #29241e;
     --old-burgundy: #43302E;
     --carmine: #960018;
     --madder: #CC3336;
     --vermillion: #e34234;
     --vivid-burgundy: #9F1D35;
     --burgundy: #800020;
-    --lead-white: #F0EBE5;
+    --lead-white: #f0ebe5;
 
 }
 
 body{
     width: 100%;
     min-height: 100vh;
+}
+
+.index-body{
     overflow: hidden;
-/*    background-color: hsl(12, 100%, 50%);*/
 }
 
 a{
@@ -212,8 +214,8 @@ footer h2:hover{
 /*Index page*/
 
 #main-message {
-    height: 20rem;
-    width: 36rem;
+    height: 24rem;
+    width: 43.2rem;
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -226,7 +228,7 @@ footer h2:hover{
 @keyframes borderAppear {
     from{
         border-image: linear-gradient(0deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
-        border-width: 8px;
+        border-width: 12px;
         border-style: solid;
         background-color: var(--black);
         opacity: 0
@@ -240,7 +242,7 @@ footer h2:hover{
     }
     to{
         border-image: linear-gradient(150deg, var(--carmine), var(--lead-white), var(--vermillion)) 1;
-        border-width: 8px;
+        border-width: 12px;
         border-style: solid;
         background-color: var(--lead-white);
     }
@@ -251,33 +253,58 @@ footer h2:hover{
 
 main h1{
     text-align: center;
+    font-size: 40px;
     margin-bottom: 3rem;
+    color: var(--lead-white);
 }
 
 #project-container{
     display: flex;
     width: 100%;
     flex-direction: column;
-    border: 3px solid brown;
 }
 
 .project-box{
     height: 35rem;
     width: 90%;
     margin-bottom: 2rem;
+    background-color: hsla(33, 16%, 14%, 0.6);
+    overflow: hidden;
     display: flex;
-    gap: 1rem;
-    border: 0.5rem solid black;
+    align-items: center;
 }
 
-#etch-a-sketch{
+.pb-left {
+    border-radius: 96px 0 0 96px;
+}
+
+.pb-left .project-image{
+    margin-right: 48px;
+}
+
+.pb-left .project-text{
+    border-left: 4px solid var(--lead-white);
+}
+
+.pb-right{
+    border-radius: 0 96px 96px 0;
     flex-direction: row-reverse;
     align-self: flex-end;
-    
+}
+
+.pb-right .project-image{
+    margin-left: 48px;
+}
+
+.pb-right .project-text{
+    border-right: 4px solid var(--lead-white);
 }
 
 .project-image{
+    height: 100%;
     flex: 2;
+    opacity: 0;
+    transition: ease-in 700ms;
 }
 
 .project-image img{
@@ -286,7 +313,51 @@ main h1{
 }
 
 .project-text{
-    height: 100%;
+    height: 70%;
+    color: var(--lead-white);
+    font-variant: small-caps;
+    font-size: 30px;
     padding: 1rem;
     flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.project-link-container button{
+    margin: 0 8px;
+    padding: 8px 12px;
+    background-color: transparent;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: ease-in-out 700ms;
+}
+
+.demo-btn{
+    width: 96px;
+    box-shadow: inset 0 0 0 0 var(--lead-white);
+    border: none;
+    border-bottom: 4px solid var(--carmine);
+    color: var(--vermillion);
+}
+
+.demo-btn:hover{
+    box-shadow: inset 96px 0 0 0 var(--vermillion);
+    color: var(--lead-white);
+    cursor: pointer;
+}
+
+.code-btn{
+    box-shadow: inset 0 0 0 0 var(--vermillion);
+    border: none;
+    border-bottom: 4px solid var(--lead-white);
+    color: var(--lead-white);
+}
+
+.code-btn:hover{
+    box-shadow: inset 96px 0 0 0 var(--lead-white);
+    color: var(--vermillion);
+    cursor: pointer;
 }

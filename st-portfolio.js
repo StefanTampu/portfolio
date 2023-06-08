@@ -1,6 +1,7 @@
 const leftSide = document.getElementById("left-side");
 const rightSide = document.getElementById("right-side");
 const navButton = document.getElementById("nav-button");
+const projectBoxes = document.querySelectorAll(".project-box");
 
 let rightClick = 0;
 
@@ -17,3 +18,13 @@ navButton.addEventListener("click", () => {
         leftSide.style.width = "100%";
     }
 })
+
+for(let projectBox of projectBoxes){
+    const projectImage = projectBox.querySelector(".project-image"); 
+    projectBox.addEventListener("mouseover", () => {
+        projectImage.style.opacity = "100";
+    });
+    projectBox.addEventListener("mouseout", () => {
+        projectImage.style.opacity = "0";
+    })
+}
