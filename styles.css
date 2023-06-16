@@ -358,7 +358,7 @@ footer h2:hover{
 #d-5 span{
     font-weight: bolder;
     font-size: 20px;
-    animation: redEmphasis 1s linear 12s;
+    animation: redEmphasis 1s linear 10.6s;
     animation-fill-mode: forwards;
 }
 
