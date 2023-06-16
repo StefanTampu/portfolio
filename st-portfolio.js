@@ -2,6 +2,7 @@ const leftSide = document.getElementById("left-side");
 const rightSide = document.getElementById("right-side");
 const navButton = document.getElementById("nav-button");
 const projectBoxes = document.querySelectorAll(".project-box");
+const d5 = document.getElementById("d-5");
 
 let rightClick = 0;
 
@@ -28,3 +29,12 @@ for(let projectBox of projectBoxes){
         projectImage.style.opacity = "0";
     })
 }
+
+const mainImgHover = (() => {
+    let d5End = false;
+    const mmImage = document.querySelector(".mm-img-container");
+    d5.addEventListener("animationend", () => {
+        d5End = true;
+        mmImage.setAttribute("id", "mm-image");
+    })
+})();

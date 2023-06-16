@@ -250,7 +250,7 @@ footer h2:hover{
     }
 }
 
-#mm-image{
+.mm-img-container{
     height: 100%;
     width: 100%;
     border-radius: 0 128px;
@@ -263,8 +263,12 @@ footer h2:hover{
     transition: 800ms;
 }
 
+#mm-image{
+    opacity: 0;
+}
+
 #mm-image:hover{
-    opacity: 100;
+    opacity: 1;
 }
 
 #mm-img-text{
