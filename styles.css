@@ -224,11 +224,11 @@ footer h2:hover{
     justify-content: center;
     gap: 16px;
     color: var(--charcoal);
-    animation: borderAppear 3s linear 2s;
+    animation: messageAppear 3s linear 2s, borderAppear 0.8s linear 2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes borderAppear {
+@keyframes messageAppear {
     from{
 /*        border-image: linear-gradient(0deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
         border-width: 12px;
@@ -247,6 +247,13 @@ footer h2:hover{
         border-width: 12px;
         border-style: solid;*/
         background-color: var(--lead-white);
+    }
+}
+
+@keyframes borderAppear {
+    to{
+        border-left: 24px groove var(--carmine);
+        border-right: 24px ridge var(--vermillion);
     }
 }
 
