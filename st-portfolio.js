@@ -31,10 +31,8 @@ for(let projectBox of projectBoxes){
 }
 
 const mainImgHover = (() => {
-    let d5End = false;
     const mmImage = document.querySelector(".mm-img-container");
     d5.addEventListener("animationend", () => {
-        d5End = true;
         mmImage.setAttribute("id", "mm-image");
     })
 })();

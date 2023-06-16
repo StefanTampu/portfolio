@@ -263,10 +263,6 @@ footer h2:hover{
     transition: 800ms;
 }
 
-#mm-image{
-    opacity: 0;
-}
-
 #mm-image:hover{
     opacity: 1;
 }
