@@ -4,10 +4,6 @@
     margin: 0;
 }
 
-html{
-    font-size: 16px;
-}
-
 :root{
     --black: #100C08;
     --charcoal: #29241e;
@@ -48,8 +44,8 @@ a{
 }
 
 header{
-    height: 6rem;
-    padding: 3rem;
+    height: 96px;
+    padding: 48px;
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -63,7 +59,7 @@ header:hover{
 }
 
 header h2{
-    font-size: 2rem;
+    font-size: 32px;
     color: var(--lead-white);
 }
 
@@ -117,7 +113,7 @@ header h2{
 }
 
 main{
-    padding: 2rem;
+    padding: 32px;
 }
 
 /*Side-bar on right*/
@@ -136,8 +132,8 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
-    padding: 0.1rem;
+    gap: 80px;
+    padding: 1.6px;
     /*background-image: linear-gradient(to right, var(--carmine), 80%, white);*/
     background-color: var(--carmine);
     border-left: 8px double var(--lead-white);
@@ -146,12 +142,12 @@ nav {
 }
 
 nav a{
-    padding: 0.5rem;
+    padding: 8px;
     width: 70%;
-    font-size: 2rem;
+    font-size: 32px;
     color: var(--lead-white);
     background-color: var(--madder);
-    border: 0.5rem double var(--lead-white);
+    border: 8px double var(--lead-white);
     transition: background-color 0.5s;
 }
 
@@ -162,7 +158,7 @@ nav a:hover{
 /*footer*/
 
 footer {
-    padding: 2rem;
+    padding: 32px;
     color: var(--lead-white);
     font-variant: small-caps;
     opacity: 0;
@@ -181,8 +177,8 @@ footer h2:hover{
 
 #connect-links{
     display: flex;
-    gap: 2rem;
-    margin-top: 1rem;
+    gap: 32px;
+    margin-top: 16px;
 }
 
 #connect-links img {
@@ -214,10 +210,10 @@ footer h2:hover{
 /*Index page*/
 
 #main-message {
-    height: 24rem;
-    width: 36rem;
+    height: 384px;
+    width: 576px;
     border-radius: 0 128px;
-    padding: 2rem;
+    padding: 32px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -418,7 +414,7 @@ footer h2:hover{
 main h1{
     text-align: center;
     font-size: 40px;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
     color: var(--lead-white);
 }
 
@@ -429,9 +425,9 @@ main h1{
 }
 
 .project-box{
-    height: 35rem;
+    height: 560px;
     width: 90%;
-    margin-bottom: 2rem;
+    margin-bottom: 32px;
     background-color: hsla(33, 16%, 14%, 0.6);
     overflow: hidden;
     display: flex;
@@ -481,7 +477,7 @@ main h1{
     color: var(--lead-white);
     font-variant: small-caps;
     font-size: 30px;
-    padding: 1rem;
+    padding: 16px;
     flex: 3;
     display: flex;
     flex-direction: column;
