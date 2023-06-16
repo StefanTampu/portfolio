@@ -215,39 +215,196 @@ footer h2:hover{
 
 #main-message {
     height: 24rem;
-    width: 43.2rem;
+    width: 36rem;
+    border-radius: 0 128px;
     padding: 2rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: var(--carmine);
+    gap: 16px;
+    color: var(--charcoal);
     animation: borderAppear 3s linear 2s;
     animation-fill-mode: forwards;
 }
 
 @keyframes borderAppear {
     from{
-        border-image: linear-gradient(0deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
+/*        border-image: linear-gradient(0deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
         border-width: 12px;
-        border-style: solid;
-        background-color: var(--black);
-        opacity: 0
+        border-style: solid;*/
+        opacity: 0;
     }
     33%{
-        border-image: linear-gradient(50deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
+/*        border-image: linear-gradient(50deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;*/
         opacity: 1; 
     }
     66%{
-        border-image: linear-gradient(100deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;
+/*        border-image: linear-gradient(100deg, var(--carmine), var(--lead-white),var(--vermillion)) 1;*/
     }
     to{
-        border-image: linear-gradient(150deg, var(--carmine), var(--lead-white), var(--vermillion)) 1;
+/*        border-image: linear-gradient(150deg, var(--carmine), var(--lead-white), var(--vermillion)) 1;
         border-width: 12px;
-        border-style: solid;
+        border-style: solid;*/
         background-color: var(--lead-white);
     }
 }
 
+#mm-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 0 128px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(150deg, var(--carmine), var(--lead-white), var(--vermillion));
+    background-color: var(--carmine);
+    opacity: 0;
+    transition: 800ms;
+}
+
+#mm-image:hover{
+    opacity: 100;
+}
+
+#mm-img-text{
+    max-width: max-content;
+    position: relative;
+    top: 50px;
+    left: 25px;
+    width: 150%;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: 700;
+    color: var(--lead-white);
+}
+
+#mm-img-text p{
+    transform: rotate(330deg);
+}
+
+#personal-image{
+    position: relative;
+    top: 50px;
+    left: 200px;
+    height: 120%;
+    border-radius: 16px;
+    box-shadow: -34px -34px 26px -26px hsla(33, 15%, 14%, 1);
+}
+
+#mm-title{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 700;
+    animation: makeOpaque 5s linear, upDown 1s linear 4s;
+}
+
+#mm-title span{
+    color: var(--carmine);
+}
+
+#mm-grid {
+    width: 90%;
+    list-style: none;
+    font-size: 18px;
+    font-weight: bolder;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(3, 32px);
+    align-items: center;
+    row-gap: 4px;
+}
+
+.mm-descriptor {
+    font-variant: small-caps;
+    border-left: 4px solid var(--charcoal);
+}
+
+.descriptor-red{
+    color: var(--carmine);
+    border-left: 4px solid var(--carmine);
+}
+
+#d-1,
+#d-2,
+#d-3,
+#d-4{
+    padding-left: 4px;
+}
+
+#d-3{
+    animation: makeOpaque 7s linear;
+}
+
+#d-2{
+    animation: makeOpaque 8s linear;
+}
+
+#d-1{
+    animation: makeOpaque 9s linear;
+}
+
+#d-4{
+    animation: makeOpaque 10s linear;
+}
+
+#d-5{
+    font-size: 24px;
+    grid-column: 1/-1;
+    border-left: none;
+    animation: makeOpaque 12s linear, downUp 1s linear 9.6s;
+}
+
+#d-5 span{
+    font-weight: bolder;
+    font-size: 20px;
+    animation: redEmphasis 1s linear 12s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes makeOpaque {
+    from{
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes upDown {
+    from{
+        transform: translate(-16px, -16px);
+    }
+    to{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes downUp {
+    from{
+        transform: translate(-16px, 16px);
+    }
+    to{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes redEmphasis {
+    from{
+        color: var(--charcoal);
+    }
+    50%{
+        color: var(--vermillion);
+        font-size: 28px;
+    }
+    to{
+        color: var(--carmine);
+        font-size: 24px;
+    }
+}
 
 /*Projects page*/
 
