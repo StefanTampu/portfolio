@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Cormorant:wght@300;500&display=swap');
+
+
 *{
     box-sizing: border-box;
     padding: 0;
@@ -57,8 +60,7 @@ table {
     --vermillion: #e34234;
     --vivid-burgundy: #9F1D35;
     --burgundy: #800020;
-    --lead-white: #f0ebe5;
-
+    --lead-white: #f0ebe5;    
 }
 
 body{
@@ -188,6 +190,8 @@ nav {
 nav a{
     padding: 8px;
     width: 70%;
+    font-family: 'Cormorant', 'Times New Roman', Times, serif;
+    font-weight: 500;
     font-size: 32px;
     color: var(--lead-white);
     background-color: var(--madder);
@@ -199,6 +203,10 @@ nav a:hover{
     background-color: var(--vermillion);
 }
 
+nav a:active{
+    background-color: var(--lead-white);
+}
+
 /*footer*/
 
 footer {
@@ -208,14 +216,16 @@ footer {
     opacity: 0;
     animation: footerAppear 3s linear 5s;
     animation-fill-mode: forwards;
-}   
+}
 
-footer h2{
+footer h3 {
+    font-family: 'Cormorant', 'Times New Roman', Times, serif;
+    font-size: 24px;
     display: inline;
     transition: 500ms;
 }
 
-footer h2:hover{
+footer h3:hover{
     text-shadow: 0 -4px 8px white;
 }
 
@@ -262,6 +272,8 @@ footer h2:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Cormorant', 'Times New Roman', Times, serif;
+/*    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
     gap: 16px;
     color: var(--charcoal);
     animation: messageAppear 3s linear 2s, borderAppear 0.8s linear 2s;
@@ -457,6 +469,7 @@ footer h2:hover{
 
 main h1{
     text-align: center;
+    font-family: 'Cormorant', 'Times New Roman', Times, serif;
     font-size: 40px;
     margin-bottom: 48px;
     color: var(--lead-white);
@@ -519,8 +532,10 @@ main h1{
 .project-text{
     height: 70%;
     color: var(--lead-white);
+    font-family: 'Cormorant', 'Times New Roman', Times, serif;
     font-variant: small-caps;
-    font-size: 30px;
+    font-size: 32px;
+    font-weight: 500;
     padding: 16px;
     flex: 3;
     display: flex;
@@ -534,6 +549,7 @@ main h1{
     margin: 0 8px;
     padding: 8px 12px;
     background-color: transparent;
+    font-family: 'Cormorant', 'Times New Roman', Times, serif;
     font-size: 24px;
     text-transform: uppercase;
     transition: ease-in-out 700ms;
