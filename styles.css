@@ -107,6 +107,11 @@ header:hover{
 header h2{
     font-size: 32px;
     color: var(--lead-white);
+    transition: 500ms;
+}
+
+header h2:hover {
+    text-shadow: 0 0 8px white;
 }
 
 .diamond {
