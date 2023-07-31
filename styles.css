@@ -263,7 +263,7 @@ footer h3:hover{
 
 /*Index page*/
 
-#main-message {
+.main-message {
     height: 384px;
     width: 576px;
     border-radius: 0 128px;
@@ -276,6 +276,9 @@ footer h3:hover{
 /*    font-family: Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;*/
     gap: 16px;
     color: var(--charcoal);
+}
+
+#index-message {
     animation: messageAppear 3s linear 2s, borderAppear 0.8s linear 2s;
     animation-fill-mode: forwards;
 }
@@ -597,4 +600,96 @@ main h1{
     box-shadow: inset 96px 0 0 0 var(--lead-white);
     color: var(--vermillion);
     cursor: pointer;
+}
+
+/*About Page*/
+
+#about-main {
+    display: flex;
+    justify-content: center;
+}
+
+#about-message {
+    height: 480px;
+    background-color: var(--lead-white);
+    border-left: 24px groove var(--carmine);
+    border-right: 24px ridge var(--vermillion);
+    color: var(--charcoal);
+    opacity: 0;
+    animation: aboutMessage 3s ease-in-out 1s forwards;
+}
+
+@keyframes aboutMessage {
+    from {
+        width: 0px;
+        opacity: 0;
+    }
+    33% {
+        opacity: 1;
+    }
+    to {
+        opacity: 1;
+        width: 864px;
+    }
+}
+
+#about-message > * {
+    opacity: 0;
+    animation: aboutMessageText 1s linear 4s forwards;
+}
+
+@keyframes aboutMessageText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#about-message h1 {
+    margin-bottom: 0px;
+    color: var(--charcoal);
+    text-transform:uppercase;
+    text-align: left;
+    font-weight: 700;
+}
+
+#about-message h2 {
+    font-size: 24px;
+    font-variant: small-caps;
+    text-align: left;
+    font-weight: 600;
+}
+
+#about-message p {
+    font-size: 20px;
+    text-align: left;
+}
+
+#about-message span {
+    font-weight: 600;
+    animation: aboutSpan 2s linear 5s forwards;
+}
+
+@keyframes aboutSpan {
+    from {
+        color: var(--charcoal);
+    }
+    50% {
+        color: var(--madder);
+        text-shadow: 0 0 4px var(--vermillion);
+    }
+    to {
+        color: var(--carmine);
+    }
+}
+
+#about-body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#about-footer {
+    transform: translate(0, -64px);
 }
