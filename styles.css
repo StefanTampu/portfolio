@@ -63,6 +63,18 @@ table {
     --lead-white: #f0ebe5;    
 }
 
+h1 {
+    font-size: 86px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
 body{
     width: 100%;
     min-height: 100vh;
@@ -89,7 +101,7 @@ a{
     background: radial-gradient(at top left, var(--black) 61%, var(--charcoal));
 }
 
-.ls-fixed#left-side{
+.ls-fixed#left-side{  /**This category is for left-sides that are smaller than a full page, so as to not affect scrollability on other pages*/
     position: fixed;
     top: 0;
     left: 0;
@@ -110,7 +122,6 @@ header:hover{
 }
 
 header h2{
-    font-size: 32px;
     color: var(--lead-white);
     transition: 500ms;
 }
@@ -230,7 +241,6 @@ footer {
 
 footer h3 {
     font-family: 'Cormorant', 'Times New Roman', Times, serif;
-    font-size: 24px;
     display: inline;
     transition: 500ms;
 }
@@ -274,8 +284,6 @@ footer h3:hover{
 /*Index page*/
 
 .main-message {
-    height: 384px;
-    width: 576px;
     border-radius: 0 128px;
     padding: 32px;
     position: relative;
@@ -289,6 +297,8 @@ footer h3:hover{
 }
 
 #index-message {
+    height: 600px;
+    width: 1000px;
     animation: messageAppear 3s linear 2s, borderAppear 0.8s linear 2s;
     animation-fill-mode: forwards;
 }
@@ -378,13 +388,12 @@ footer h3:hover{
 #mm-grid {
     width: 90%;
     list-style: none;
-    font-size: 18px;
     font-weight: bolder;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(3, 32px);
+    grid-template-rows: repeat(3, 80px);
     align-items: center;
-    row-gap: 4px;
+    row-gap: 8px;
 }
 
 .mm-descriptor {
@@ -421,7 +430,6 @@ footer h3:hover{
 }
 
 #d-5{
-    font-size: 24px;
     grid-column: 1/-1;
     border-left: none;
     animation: makeOpaque 12s linear, downUp 1s linear 9.6s;
@@ -429,7 +437,6 @@ footer h3:hover{
 
 #d-5 span{
     font-weight: bolder;
-    font-size: 20px;
     animation: redEmphasis 1s linear 10.6s;
     animation-fill-mode: forwards;
 }
@@ -470,11 +477,9 @@ footer h3:hover{
     }
     50%{
         color: var(--vermillion);
-        font-size: 28px;
     }
     to{
         color: var(--carmine);
-        font-size: 24px;
     }
 }
 
@@ -483,7 +488,6 @@ footer h3:hover{
 main h1{
     text-align: center;
     font-family: 'Cormorant', 'Times New Roman', Times, serif;
-    font-size: 40px;
     margin-bottom: 48px;
     color: var(--lead-white);
 }
@@ -620,7 +624,8 @@ main h1{
 }
 
 #about-message {
-    height: 480px;
+    height: 920px;
+    width: 1000px;
     background-color: var(--lead-white);
     border-left: 24px groove var(--carmine);
     border-right: 24px ridge var(--vermillion);
@@ -665,8 +670,7 @@ main h1{
     font-weight: 700;
 }
 
-#about-message h2 {
-    font-size: 24px;
+#about-message h3 {
     font-variant: small-caps;
     text-align: left;
     font-weight: 600;
@@ -706,7 +710,7 @@ main h1{
 
 /*Contact Page*/
 
-#contact-main {
+/*#contact-main {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -741,7 +745,7 @@ main h1{
     border-left: 24px groove var(--carmine);
     border-right: 24px ridge var(--vermillion);
 }
-
+*/
 /**Containers**/
 
 .page-container {
@@ -784,11 +788,29 @@ main h1{
     .page-container {
         max-width: 1440px;
     }
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 1440px){
     .page-container {
         max-width: 1024px;
+    }
+    h1 {
+        font-size: 54px;
+    }
+    h2 {
+        font-size: 40px;
+    }
+    h3 {
+        font-size: 30px;
     }
 }
 
@@ -802,11 +824,29 @@ main h1{
     .page-container {
         max-width: 425px;
     }
+    h1 {
+        font-size: 43px;
+    }
+    h2 {
+        font-size: 32px;
+    }
+    h3 {
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 425px){
     .page-container {
         max-width: 375px;
+    }
+    h1 {
+        font-size: 32px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 18px;
     }
 }
 
