@@ -89,6 +89,10 @@ a{
     color: none;
 }
 
+#logo {
+    font-size: 64px;
+}
+
 
 #left-side{
     min-height: 100vh;
@@ -131,10 +135,10 @@ header h2:hover {
 }
 
 .diamond {
-    height: 48px;
-    width: 48px;
+    height: 64px;
+    width: 64px;
     color: var(--lead-white);
-    font-size: 60px;
+    font-size: 90px;
     background-color: var(--carmine);
     transition: 750ms;
     display: flex;
@@ -154,7 +158,7 @@ header h2:hover {
 .diamond:hover{
     background-color: var(--vermillion);
     box-shadow: 0 0 4px 4px var(--vermillion), inset 0 0 4px 4px var(--lead-white);
-    font-size: 48px;
+    font-size: 68px;
 }
 
 .diamond p{
@@ -214,6 +218,7 @@ nav a{
     font-family: 'Cormorant', 'Times New Roman', Times, serif;
     font-weight: 500;
     font-size: 32px;
+    font-weight: 900;
     color: var(--lead-white);
     background-color: var(--madder);
     border: 8px double var(--lead-white);
