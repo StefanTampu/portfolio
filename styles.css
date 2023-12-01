@@ -629,6 +629,7 @@ main h1{
 #about-message {
     height: 920px;
     width: 1000px;
+    font-size: 36px;
     background-color: var(--lead-white);
     border-left: 24px groove var(--carmine);
     border-right: 24px ridge var(--vermillion);
@@ -677,11 +678,6 @@ main h1{
     font-variant: small-caps;
     text-align: left;
     font-weight: 600;
-}
-
-#about-message p {
-    font-size: 20px;
-    text-align: left;
 }
 
 #about-message span {
@@ -809,6 +805,11 @@ main h1{
     .code-btn:hover{
         box-shadow: inset 127px 0 0 0 var(--lead-white);
     }
+    #about-message {
+        height: 920px;
+        width: 1000px;
+        font-size: 36px;
+    }
 }
 
 @media (max-width: 1440px){
@@ -832,6 +833,11 @@ main h1{
     }
     .code-btn:hover{
         box-shadow: inset 110px 0 0 0 var(--lead-white);
+    }
+    #about-message {
+        height: 920px;
+        width: 1000px;
+        font-size: 30px;
     }
 }
 
@@ -863,6 +869,11 @@ main h1{
     .code-btn:hover{
         box-shadow: inset 101px 0 0 0 var(--lead-white);
     }
+    #about-message {
+        height: 920px;
+        width: 1000px;
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 425px){
@@ -886,6 +897,11 @@ main h1{
     }
     .code-btn:hover{
         box-shadow: inset 82px 0 0 0 var(--lead-white);
+    }
+    #about-message {
+        height: 920px;
+        width: 1000px;
+        font-size: 18px;
     }
 }
 
