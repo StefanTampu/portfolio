@@ -302,8 +302,8 @@ footer h3:hover{
 }
 
 #index-message {
-    height: 600px;
-    width: 1000px;
+    height: 500px;
+    width: 900px;
     animation: messageAppear 3s linear 2s, borderAppear 0.8s linear 2s;
     animation-fill-mode: forwards;
 }
@@ -357,10 +357,10 @@ footer h3:hover{
 #mm-img-text{
     max-width: max-content;
     position: relative;
-    top: 50px;
+    top: 100px;
     left: 25px;
     width: 150%;
-    font-size: 42px;
+    font-size: 80px;
     font-style: italic;
     font-weight: 700;
     color: var(--lead-white);
@@ -372,15 +372,14 @@ footer h3:hover{
 
 #personal-image{
     position: relative;
-    top: 50px;
-    left: 200px;
+    top: 100px;
+    left: 500px;
     height: 120%;
     border-radius: 16px;
     box-shadow: -34px -34px 26px -26px hsla(33, 15%, 14%, 1);
 }
 
 #mm-title{
-    font-size: 32px;
     font-style: italic;
     font-weight: 700;
     animation: makeOpaque 5s linear, upDown 1s linear 4s;
@@ -796,6 +795,21 @@ main h1{
     h3 {
         font-size: 36px;
     }
+    #mm-img-text{
+        top: 70px;
+        left: 10px;
+        font-size: 64px;
+    }
+    #personal-image{
+        top: 80px;
+        left: 400px;
+        height: 120%;
+    }
+    
+    #index-message {
+        height: 400px;
+        width: 700px;
+    }
     .project-link-container button{
         font-size: 36px;
     }
@@ -824,6 +838,20 @@ main h1{
     }
     h3 {
         font-size: 30px;
+    }
+    #mm-img-text{
+        top: 70px;
+        left: 10px;
+        font-size: 64px;
+    }
+    #personal-image{
+        top: 40px;
+        left: 200px;
+        height: 120%;
+    }
+    #index-message {
+        height: 350px;
+        width: 600px;
     }
     .project-link-container button{
         font-size: 30px;
@@ -860,6 +888,26 @@ main h1{
     h3 {
         font-size: 24px;
     }
+    #mm-img-text{
+        top: 90px;
+        left: 10px;
+        font-size: 48px;
+    }
+    #personal-image{
+        top: 120px;
+        left: 100px;
+        height: 80%;
+    }
+    #index-message {
+        height: 400px;
+        width: 350px;
+    }
+    #mm-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        row-gap: 8px;
+    }
     .project-link-container button{
         font-size: 24px;
     }
@@ -889,6 +937,20 @@ main h1{
     h3 {
         font-size: 18px;
     }
+    #mm-img-text{
+        top: 90px;
+        left: 10px;
+        font-size: 48px;
+    }
+    #personal-image{
+        top: 200px;
+        left: 80px;
+        height: 60%;
+    }
+    #index-message {
+        height: 400px;
+        width: 300px;
+    }
     .project-link-container button{
         font-size: 18px;
     }
@@ -907,12 +969,20 @@ main h1{
 
 @media (max-width: 375px){
     .page-container {
-        width: 100%;
+        width: 320px;
+    }
+    #mm-img-text{
+        top: 90px;
+        left: 10px;
+        font-size: 48px;
+    }
+    #personal-image{
+        top: 160px;
     }
 }
 
 @media (max-width: 320px){
     .page-container {
-        max-width: 320px;
+        max-width: 100%;
     }
 }
