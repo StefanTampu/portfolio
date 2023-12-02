@@ -623,11 +623,11 @@ main h1{
 #about-main {
     display: flex;
     justify-content: center;
+    min-height: 700px;
 }
 
 #about-message {
-    height: 920px;
-    width: 1000px;
+    height: 800px;
     font-size: 36px;
     background-color: var(--lead-white);
     border-left: 24px groove var(--carmine);
@@ -647,7 +647,7 @@ main h1{
     }
     to {
         opacity: 1;
-        width: 864px;
+        width: 80%;
     }
 }
 
@@ -697,14 +697,6 @@ main h1{
     }
 }
 
-#about-body {
-    height: 100vh;
-    overflow: hidden;
-}
-
-#about-footer {
-    transform: translate(0, -64px);
-}
 
 /*Contact Page*/
 
@@ -820,9 +812,8 @@ main h1{
         box-shadow: inset 127px 0 0 0 var(--lead-white);
     }
     #about-message {
-        height: 920px;
-        width: 1000px;
         font-size: 36px;
+        height: 1000px;
     }
 }
 
@@ -863,8 +854,7 @@ main h1{
         box-shadow: inset 110px 0 0 0 var(--lead-white);
     }
     #about-message {
-        height: 920px;
-        width: 1000px;
+        height: 500px;
         font-size: 30px;
     }
 }
@@ -877,16 +867,16 @@ main h1{
 
 @media (max-width: 768px){
     .page-container {
-        max-width: 425px;
+        max-width: 600px;
     }
     h1 {
-        font-size: 43px;
+        font-size: 29px;
     }
     h2 {
-        font-size: 32px;
+        font-size: 22px;
     }
     h3 {
-        font-size: 24px;
+        font-size: 16px;
     }
     #mm-img-text{
         top: 90px;
@@ -909,7 +899,7 @@ main h1{
         row-gap: 8px;
     }
     .project-link-container button{
-        font-size: 24px;
+        font-size: 16px;
     }
     .demo-btn:hover{
         box-shadow: inset 101px 0 0 0 var(--vermillion);
@@ -918,9 +908,20 @@ main h1{
         box-shadow: inset 101px 0 0 0 var(--lead-white);
     }
     #about-message {
-        height: 920px;
-        width: 1000px;
-        font-size: 24px;
+        width: 100%;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px){
+    .page-container {
+        max-width: 425px;
+    }
+    .main-message #about-message {
+        padding: none;
+    }
+    #about-message {
+        width: 100%;
     }
 }
 
@@ -961,8 +962,7 @@ main h1{
         box-shadow: inset 82px 0 0 0 var(--lead-white);
     }
     #about-message {
-        height: 920px;
-        width: 1000px;
+        height: fit-content;
         font-size: 18px;
     }
 }
