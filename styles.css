@@ -543,6 +543,8 @@ main h1{
     flex: 2;
     opacity: 0;
     transition: ease-in 700ms;
+    background-size: cover;
+    background-position: center;
 }
 
 .project-image img{
@@ -550,15 +552,31 @@ main h1{
     height: 100%;
 }
 
-#restaurant-img {
-    height: 100%;
-    width: 100%;
-    background: url(resources/restaurant.jpg);
-    background-size: cover;
-    background-position: center;
+#bratia-img {
+    background-image: url(resources/ferma-bratia.png);
 }
 
-#restaurant-img-link {
+#quois-img {
+    background-image: url(resources/quois.png);
+}
+
+#restaurant-img {
+    background-image: url(resources/restaurant.jpg);
+}
+
+#calculator-img {
+    background-image: url(resources/calculator.jpg);
+}
+
+#eas-img {
+    background-image: url(resources/eas.jpeg);
+}
+
+#rps-img {
+    background-image: url(resources/rps.jpeg);
+}
+
+.project-img-link {
     display: block;
     position: relative;
     left: 0;
@@ -813,7 +831,7 @@ main h1{
     }
     #about-message {
         font-size: 36px;
-        height: 1000px;
+        height: 900px;
     }
 }
 
