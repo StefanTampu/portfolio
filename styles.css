@@ -94,7 +94,7 @@ a{
 }
 
 
-#left-side{
+.left-side{
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -105,12 +105,16 @@ a{
     background: radial-gradient(at top left, var(--black) 61%, var(--charcoal));
 }
 
-.ls-fixed#left-side{  /**This category is for left-sides that are smaller than a full page, so as to not affect scrollability on other pages*/
+.ls-fixed.left-side{  /**This category is for left-sides that are smaller than a full page, so as to not affect scrollability on other pages*/
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     height: 100%;
+}
+
+.ls-active {
+    width: 75%;
 }
 
 header{
@@ -146,6 +150,10 @@ header h2:hover {
     align-items: center;
     transform: rotate(45deg);
     border: 6px double var(--lead-white);
+}
+
+.nv-active {
+    transform: rotate(0deg);
 }
 
 .index-diamond {
@@ -189,13 +197,17 @@ header h2:hover {
 
 /*Side-bar on right*/
 
-#right-side{
+.right-side{
     width: 0%;
     position: fixed;
     top: 0;
     right: 0;
     height: 100%;
     transition: width 1s;
+}
+
+.rs-active {
+    width: 25%;
 }
 
 nav {
