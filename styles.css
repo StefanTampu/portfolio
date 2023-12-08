@@ -105,14 +105,6 @@ a{
     background: radial-gradient(at top left, var(--black) 61%, var(--charcoal));
 }
 
-.ls-fixed.left-side{  /**This category is for left-sides that are smaller than a full page, so as to not affect scrollability on other pages*/
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-}
-
 .ls-active {
     width: 75%;
 }
@@ -888,6 +880,12 @@ main h1{
         width: 100%;
         font-size: 30px;
     }
+
+    .left-side {
+        width: 100%;
+        overflow: hidden;
+    }
+
     .right-side {
         width: 100%;
         height: 0;
@@ -1024,6 +1022,10 @@ main h1{
     }
     nav a {
         font-size: 24px;
+    }
+
+    .project-image{
+        opacity: 100;
     }
 }
 
