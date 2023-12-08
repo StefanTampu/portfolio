@@ -1026,9 +1026,6 @@ main h1{
         height: fit-content;
         font-size: 18px;
     }
-    .rs-active {
-        height: 15vh;
-    }
     nav a {
         font-size: 18px;
     }
