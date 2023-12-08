@@ -922,9 +922,58 @@ main h1{
     .page-container {
         max-width: 768px;
     }
-    #about-message {
-        height: 1000px;
+
+    .project-box {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
     }
+
+    .pb-left {
+        border-radius: 0 0 96px 96px;
+        align-self: center;
+        flex-direction: column-reverse;
+    }
+
+    .pb-left .project-image{
+        margin-right: 0;
+        margin-top: 16px;
+    }
+
+    .pb-left .project-text{
+        border-left: none;
+        border-bottom: 4px solid var(--lead-white);
+    }
+    
+    .pb-right{
+        border-radius: 96px 96px 0 0;
+        align-self: center;
+    }
+
+    .pb-right .project-image{
+        margin-left: 0;
+        margin-bottom: 16px;
+    }
+
+    .pb-right .project-text{
+        border-right: none;
+        border-top: 4px solid var(--lead-white);
+    }
+
+    .project-image {
+        width: 100%;
+        flex: 2;
+    }
+
+    .project-text {
+        flex: 1;
+        text-align: center;
+        width: 100%;
+    }
+
+   #about-message {
+    height: 1000px;
+}
 }
 
 @media (max-width: 768px){
@@ -1054,8 +1103,5 @@ main h1{
 @media (max-width: 320px){
     .page-container {
         max-width: 100%;
-    }
-    #about-message {
-        
     }
 }
