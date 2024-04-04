@@ -556,6 +556,10 @@ main h1{
     height: 100%;
 }
 
+#avey-img {
+    background-image: url(resources/avey-logo.png);
+}
+
 #bratia-img {
     background-image: url(resources/ferma-bratia.png);
 }
@@ -721,6 +725,41 @@ main h1{
 
 
 /*Contact Page*/
+
+#contact-message {
+    height: 450px;
+    font-size: 36px;
+    background-color: var(--lead-white);
+    border-left: 24px groove var(--carmine);
+    border-right: 24px ridge var(--vermillion);
+    color: var(--charcoal);
+    opacity: 0;
+    animation: aboutMessage 3s ease-in-out 1s forwards;
+}
+
+#contact-message > * {
+    opacity: 0;
+    animation: aboutMessageText 1s linear 4s forwards;
+}
+
+#contact-message h1 {
+    margin-bottom: 0px;
+    color: var(--charcoal);
+    text-transform:uppercase;
+    text-align: left;
+    font-weight: 700;
+}
+
+#contact-message h2 {
+    font-variant: small-caps;
+    text-align: left;
+    font-weight: 600;
+}
+
+#contact-message span {
+    font-weight: 600;
+    animation: aboutSpan 2s linear 5s forwards;
+}
 
 /*#contact-main {
     display: flex;
