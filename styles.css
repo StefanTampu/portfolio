@@ -1037,8 +1037,14 @@ main h1{
         height: 80%;
     }
     #index-message {
-        height: 400px;
+        height: 500px;
         width: 350px;
+    }
+    #mm-title h2 {
+        font-size: 32px;
+    }
+    .mm-descriptor h3 {
+        font-size: 28px;
     }
     #mm-grid {
         display: flex;
@@ -1102,7 +1108,7 @@ main h1{
         height: 60%;
     }
     #index-message {
-        height: 400px;
+        height: 500px;
         width: 300px;
     }
     .project-link-container button{
