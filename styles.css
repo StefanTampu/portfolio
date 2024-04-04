@@ -761,6 +761,10 @@ main h1{
     animation: aboutSpan 2s linear 5s forwards;
 }
 
+#contact-message a {
+    color: inherit;
+}
+
 /*#contact-main {
     display: flex;
     flex-direction: column;
@@ -1072,6 +1076,14 @@ main h1{
     .project-image{
         opacity: 100;
     }
+
+    #contact-message h1 {
+        font-size: 32px;
+    }
+
+    #contact-message h2 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 600px){
@@ -1081,6 +1093,14 @@ main h1{
     #about-message {
         height: 600px;
         padding: 16px;
+    }
+
+    #contact-message h1 {
+        font-size: 28px;
+    }
+
+    #contact-message h2 {
+        font-size: 26px;
     }
 }
 
@@ -1127,6 +1147,12 @@ main h1{
     nav a {
         font-size: 18px;
     }
+    #contact-message h1 {
+        font-size: 24px;
+    }
+    #contact-message h2 {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 375px){
@@ -1144,6 +1170,12 @@ main h1{
     #about-message {
         height: 1000px;
         padding: 8px;
+    }
+    #contact-message h1 {
+        font-size: 20px;
+    }
+    #contact-message h2 {
+        font-size: 16px;
     }
 }
 
